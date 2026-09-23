@@ -1,4 +1,6 @@
-﻿namespace Lab2
+using System.Reflection.Metadata.Ecma335;
+
+namespace Lab2
 {
     public class White
     {
@@ -8,7 +10,9 @@
             int answer = 0;
 
             // code here
-
+           
+            for (int i = 1; i <= n; i++)
+                answer += 3 * i - 1;
             // end
 
             return answer;
@@ -18,16 +22,24 @@
             double answer = 0;
 
             // code here
+            for (int i = 1; i <= n; i++)
+            {
+                answer += 1.0 / i;
+            }
 
-            // end
+             // end
 
             return answer;
         }
         public long Task3(int n)
         {
-            long answer = 0;
+            long answer = 1;
 
             // code here
+            for (int i = 2; i<=n; i++)
+            {
+                answer *= i;
+            }
 
             // end
 
@@ -38,6 +50,7 @@
             long answer = 0;
 
             // code here
+
 
             // end
 
